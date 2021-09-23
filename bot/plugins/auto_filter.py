@@ -205,7 +205,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_photo(
                 chat_id = update.chat.id,
-                photo= "https://telegra.ph/file/842ec4694de82608b18cb.jpg",
+                photo= "https://telegra.ph/file/a0aea80f828defec06c47.jpg",
                 text=f"Found {(len_results)} </b>\n<b>❤️‍🔥𝐆𝐫𝐨𝐮𝐩❤️‍🔥:- @beast_boys77 ♻️ 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞 ♻️ :- <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
