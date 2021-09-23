@@ -41,7 +41,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/storytimeoG"
+                                    '⚠️ 𝙅𝙊𝙄𝙉', url="https://t.me/beast_boys007"
                                 )
                         ] 
                     ]
@@ -56,7 +56,7 @@ async def start(bot, update):
         InlineKeyboardButton('🕵️‍♂️ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url='https://t.me/darkz_angel'),
         InlineKeyboardButton('⚠️ 𝙂𝙍𝙊𝙐𝙋', url ='https://t.me/beast_boys77')
     ],[
-        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/storytimeoG')
+        InlineKeyboardButton('♻️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ♻️', url='https://t.me/beast_boys007')
     ],[
         InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
         InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
