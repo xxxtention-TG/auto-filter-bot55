@@ -69,13 +69,13 @@ async def auto_filter(bot, update):
             # from B to MiB
             
             if file_size < 1024:
-                file_size = f"[{file_size} B]"
+                file_size = f"{file_size} B"
             elif file_size < (1024**2):
-                file_size = f"[{str(round(file_size/1024, 2))} KB] "
+                file_size = f"{str(round(file_size/1024, 2))} KB "
             elif file_size < (1024**3):
-                file_size = f"[{str(round(file_size/(1024**2), 2))} MB] "
+                file_size = f"{str(round(file_size/(1024**2), 2))} MB "
             elif file_size < (1024**4):
-                file_size = f"[{str(round(file_size/(1024**3), 2))} GB] "
+                file_size = f"{str(round(file_size/(1024**3), 2))} GB "
             
             
             file_size = "" if file_size == ("[0 B]") else file_size
@@ -206,7 +206,14 @@ async def auto_filter(bot, update):
             await bot.send_photo(
                 chat_id = update.chat.id,
                 photo= "https://telegra.ph/file/a0aea80f828defec06c47.jpg",
-                caption=f"<b>𝐆𝐫𝐨𝐮𝐩 :- @beast_boys77</b>\n 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞 :- <code>{query}</code>\n<b> 𝐑𝐞𝐬𝐮𝐥𝐭 𝐅𝐨𝐮𝐧𝐝 :- {(len_results)}</b>",
+                caption=f"""<b>𝐆𝐫𝐨𝐮𝐩:- @beast_boys77
+𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query} 
+𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {(len_results)} 
+𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention}
+
+𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲
+
+പടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇</b>""",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
